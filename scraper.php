@@ -14,7 +14,7 @@ $dom = new simple_html_dom();
 $dom->load($html);
 $darow = $dom->find("table#list tbody tr");
 print 'number of records: ' . sizeof($darow);
-foreach ($dapara as $thisrow) {
+foreach ($darow as $thisrow) {
 //<tr>
 //	<td>DA-6-2015 - Dwelling and Carport - Land - (CT128515-1) directly to the south of 14 Smyley Street, Franklin</td>
 //    <td>Smyley Street, Franklin, Tasmania, Australia</td>
@@ -25,7 +25,7 @@ foreach ($dapara as $thisrow) {
 //	</td>
 //</tr>
     $record = array();
-	$cells = $darow->find("td");
+	$cells = $thisrow->find("td");
 	$refdesc = $cells[0];
 	$delim = ' - ';
 	$delimpos = stripos($refdesc, $delim);
