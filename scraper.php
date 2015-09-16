@@ -13,8 +13,8 @@ $html = scraperwiki::scrape($dapage);
 $dom = new simple_html_dom();
 $dom->load($html);
 $darow = $dom->find("table#list tbody tr");
-print 'number of records: ' . sizeof($dapara);
-foreach ($dapara as $thispara) {
+print 'number of records: ' . sizeof($darow);
+foreach ($dapara as $thisrow) {
 //<tr>
 //	<td>DA-6-2015 - Dwelling and Carport - Land - (CT128515-1) directly to the south of 14 Smyley Street, Franklin</td>
 //    <td>Smyley Street, Franklin, Tasmania, Australia</td>
