@@ -6,9 +6,9 @@ date_default_timezone_set('Australia/Hobart');
 
 require 'simple_html_dom.php';
 
-$kcbase = 'http://kingborough.tas.gov.au/';
+$url = 'http://www.huonvalley.tas.gov.au/services/planning-2/planningnotices/';
 
-$dapage = $kcbase . 'page.aspx?u=592';
+$dapage = $url;
 $html = scraperwiki::scrape($dapage);
 $dom = new simple_html_dom();
 $dom->load($html);
