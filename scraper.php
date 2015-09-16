@@ -24,6 +24,8 @@ foreach ($darow as $thisrow) {
 //		<a class="btn-sm btn btn-primary" href="https://drive.google.com/open?id=0B4M5kQr8ve_Gamx2dmtLbjZmY28" style="margin-bottom: 3px; margin-right: 3px;">Copy of Plans for display	</a>                                
 //	</td>
 //</tr>
+  var_dump($thisrow);
+
     $record = array();
 	$cells = $thisrow->find("td");
 	
