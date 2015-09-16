@@ -26,6 +26,9 @@ foreach ($darow as $thisrow) {
 //</tr>
     $record = array();
 	$cells = $thisrow->find("td");
+	
+	var_dump($cells);
+	
 	$refdesc = $cells[0];
 	$delim = ' - ';
 	$delimpos = stripos($refdesc, $delim);
