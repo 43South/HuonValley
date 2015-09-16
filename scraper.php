@@ -30,7 +30,7 @@ foreach ($darow as $thisrow) {
 	$delim = ' - ';
 	$delimpos = stripos($refdesc, $delim);
     $record['council_reference'] = substr($refdesc, 0, $stripos - 1);
-	$record['description'] = substr($refdesc, $stripos + length(delim));
+	$record['description'] = substr($refdesc, $stripos + strlen(delim));
 	$record['address'] = $cells[1];
 	$record['date_received'] = $cells[2];
 	$record['on_notice_to'] = date('Y-m-d', $cells[3]);
